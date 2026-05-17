@@ -39,7 +39,6 @@ AnymeX (.anymex)  ──▶  Mihon JSON  ──▶  backup.mihon.tools  ──�
 | 📄 | **CSV Import** | Plain CSV list of titles with optional status & progress |
 | ⚡ | **Batch Add** | Paste titles, fetch AniList, download `.anymex` instantly |
 | 🔗 | **Share List** | Compressed URL to share your list with anyone |
-| 🔄 | **Reverse Migrate** | AnymeX backup → Mihon JSON, no server |
 | 🖼️ | **Lists Tab** | Shareable cover grid from your `.anymex` backup |
 | 🌐 | **EN / JP UI** | Toggle interface between English and Japanese |
 | 💾 | **Resume Support** | Interrupted fetches auto-save and resume |
@@ -74,17 +73,6 @@ AnymeX (.anymex)  ──▶  Mihon JSON  ──▶  backup.mihon.tools  ──�
 3. Drop an existing .anymex to merge into  (optional)
 4. ⚡ Fetch & Build → file downloads automatically
 ```
-
-### Reverse Migrate (AnymeX → Mihon)
-
-```
-1. AnymeX → Data Management → Backup Data  (.anymex file)
-2. Upload in Reverse Migrate card → Convert & Download .json
-3. backup.mihon.tools → Upload JSON → Export .mihon
-4. Mihon → Backup & restore → Restore backup
-```
-
-> ⚠️ Only manga entries convert. Read progress & status are preserved. Scores and notes are not supported by the Mihon format.
 
 ### Lists Tab
 
@@ -131,7 +119,6 @@ mihon-to-anymex/
 ├── index.html              ← main app UI (all-in-one)
 ├── apply-tabs.js           ← injects Convert / Lists tab nav
 ├── lists.js                ← Lists tab (share & viewer logic)
-├── mal.js                  ← MAL import logic
 ├── lz-string.min.js        ← URL compression for share links
 ├── inject-scripts.js       ← sequential script loader
 ├── mangayomi-to-csv.html   ← standalone Mangayomi helper page
